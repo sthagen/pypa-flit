@@ -42,8 +42,8 @@ Version 3.10
   or user tokens (:samp:`pypi_token:user:{username}`).
 - The ``--python`` option can now take the path of a virtualenv folder, as an
   alternative to a Python executable (:ghpull:`667`).
-- Flit will work with current development versions of Pythona again (:ghpull:`684`).
-- The ``flit`` command line package now requires Python 3.8 or above (:ghpulL:`660`).
+- Flit will work with current development versions of Python again (:ghpull:`684`).
+- The ``flit`` command line package now requires Python 3.8 or above (:ghpull:`660`).
   ``flit_core`` still works with Python 3.6 or above.
 - The metadata in packages now has the names of optional dependency groups
   ("extras") normalised, complying with version 2.3 of the metadata standard
@@ -56,7 +56,7 @@ Version 3.10
   (:ghpull:`674`). It's a good idea to always set a maximum version for the
   build requirement, to protect against changes in future major versions of Flit.
 - Avoid using the deprecated ``datetime.utcfromtimestamp()`` (:ghpull:`682`).
-- Flit now has a ``SECURITY.md`` file in the Github repository (:ghpull:`665`).
+- Flit now has a ``SECURITY.md`` file in the GitHub repository (:ghpull:`665`).
 - The tests for ``flit_core`` are no longer part of the installed package,
   reducing the size of the wheels (:ghpull:`691`).
 
@@ -526,7 +526,7 @@ Version 0.8
 -----------
 
 - A new ``flit installfrom`` subcommand to install a project from a source
-  archive, such as from Github.
+  archive, such as from GitHub.
 - :doc:`Reproducible builds <reproducible>` - you can produce byte-for-byte
   identical wheels.
 - A warning for non-canonical version numbers according to `PEP 440

@@ -95,7 +95,7 @@ readme
   an optional ``content-type`` key (e.g. ``text/x-rst``).
 requires-python
   A version specifier for the versions of Python this requires, e.g. ``~=3.3`` or
-  ``>=3.3,<4``, which are equivalents.
+  ``>=3.3,<4``, which are equivalent.
 license
   A valid SPDX `license expression <https://peps.python.org/pep-0639/#term-license-expression>`_
   or a table with either a ``file`` key (a relative path to a license file) or a
@@ -115,7 +115,7 @@ classifiers
   Add ``Private :: Do Not Upload`` into the list to prevent a private package
   from being uploaded to PyPI by accident.
 import-names
-  A list containing the importable module name in this package. You don't
+  A list containing the importable module names in this package. You don't
   normally need to supply this manually, but you can specify it with a
   ``; private`` suffix to record that the module is not intended for public use.
   This does not stop anyone importing it.
@@ -214,7 +214,7 @@ without a console.
 Entry points sections
 ~~~~~~~~~~~~~~~~~~~~~
 
-You can declare `entry points <http://entrypoints.readthedocs.io/en/latest/>`_
+You can declare `entry points <https://entrypoints.readthedocs.io/en/latest/>`_
 using sections named :samp:`[project.entry-points.{groupname}]`. E.g. to
 provide a pygments lexer from your package:
 
