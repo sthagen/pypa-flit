@@ -88,7 +88,7 @@ description
 readme
   A path (relative to the .toml file) to a file containing a longer description
   of your package to show on PyPI. This should be written in `reStructuredText
-  <http://docutils.sourceforge.net/docs/user/rst/quickref.html>`_, Markdown or
+  <https://docutils.sourceforge.io/docs/user/rst/quickref.html>`_, Markdown or
   plain text, and the filename should have the appropriate extension
   (``.rst``, ``.md`` or ``.txt``). Alternatively, ``readme`` can be a table with
   either a ``file`` key (a relative path) or a ``text`` key (literal text), and

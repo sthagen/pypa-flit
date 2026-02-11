@@ -190,7 +190,7 @@ class TerminalIniter(IniterBase):
             home_page_default = None
         home_page = self.prompt_text('Home page', home_page_default, self.validate_homepage,
                                      retry_msg="Should start with http:// or https:// - try again.")
-        license = self.prompt_options('Choose a license (see http://choosealicense.com/ for more info)',
+        license = self.prompt_options('Choose a license (see https://choosealicense.com/ for more info)',
                     license_choices, self.defaults.get('license'))
 
         readme = self.find_readme()
