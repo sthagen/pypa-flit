@@ -14,7 +14,7 @@ Common options
    Path to a config file specifying the module to build. The default is
    ``pyproject.toml``.
 
-.. option::  --version
+.. option:: --version
 
    Show the version of Flit in use.
 
@@ -196,7 +196,7 @@ Flit guess.
 
 .. program:: flit init
 
-Create a new ``pyproject.toml``  config file by prompting for information about
+Create a new ``pyproject.toml`` config file by prompting for information about
 the module in the current directory.
 
 Environment variables
