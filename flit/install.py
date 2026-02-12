@@ -53,8 +53,8 @@ def test_writable_dir(path):
     return _test_writable_dir_win(path)
 
 def _test_writable_dir_win(path):
-    # os.access doesn't work on Windows: http://bugs.python.org/issue2528
-    # and we can't use tempfile: http://bugs.python.org/issue22107
+    # os.access doesn't work on Windows: https://github.com/python/cpython/issues/46780
+    # and we can't use tempfile: https://github.com/python/cpython/issues/66305
     basename = 'accesstest_deleteme_fishfingers_custard_'
     alphabet = 'abcdefghijklmnopqrstuvwxyz0123456789'
     for i in range(10):
