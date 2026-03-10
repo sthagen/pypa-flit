@@ -289,17 +289,17 @@ def _license_files_from_globs(project_dir: Path, globs, warn_no_files = True):
     for pattern in globs:
         if isabs_ish(pattern):
             raise ConfigError(
-                f"Invalid glob pattern for [project.license-files]: '{pattern}'. "
+                f"Invalid glob pattern for [project.license-files]: {pattern!r}. "
                 "Pattern must not start with '/'."
             )
         if ".." in pattern:
             raise ConfigError(
-                f"Invalid glob pattern for [project.license-files]: '{pattern}'. "
+                f"Invalid glob pattern for [project.license-files]: {pattern!r}. "
                 "Pattern must not contain '..'"
             )
         if license_files_allowed_chars.match(pattern) is None:
             raise ConfigError(
-                "Invalid glob pattern for [project.license-files]: '{}'. "
+                f"Invalid glob pattern for [project.license-files]: {pattern!r}. "
                 "Pattern contains invalid characters. "
                 "https://packaging.python.org/en/latest/specifications/pyproject-toml/#license-files"
             )
@@ -311,12 +311,12 @@ def _license_files_from_globs(project_dir: Path, globs, warn_no_files = True):
             ]
         except ValueError as ex:
             raise ConfigError(
-                f"Invalid glob pattern for [project.license-files]: '{pattern}'. {ex.args[0]}"
+                f"Invalid glob pattern for [project.license-files]: {pattern!r}. {ex.args[0]}"
             )
 
         if not files and warn_no_files:
             raise ConfigError(
-                f"No files found for [project.license-files]: '{pattern}' pattern"
+                f"No files found for [project.license-files]: {pattern!r} pattern"
             )
         license_files.update(files)
     return license_files
