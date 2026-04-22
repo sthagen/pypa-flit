@@ -380,6 +380,8 @@ def test_license_expr_error_unsupported_with(invalid_expr: str):
     ({'license-files': ["**/LICENSE*"]}, ["LICENSE", "module/vendor/LICENSE_VENDOR"]),
     ({'license-files': ["module/vendor/LICENSE*"]}, ["module/vendor/LICENSE_VENDOR"]),
     ({'license-files': ["LICENSE", "module/**/LICENSE*"]}, ["LICENSE", "module/vendor/LICENSE_VENDOR"]),
+    # It was decided the banning spaces was an oversight
+    ({'license-files': ["Third-Party Notices.md"]}, ["Third-Party Notices.md"]),
     # Add project.license.file + match default patterns
     ({'license': {'file': 'module/vendor/LICENSE_VENDOR'}}, ["LICENSE", "module/vendor/LICENSE_VENDOR"]),
 ])
