@@ -4,6 +4,10 @@ Release history
 Version 4.0
 -----------
 
+This version contains breaking changes, but most projects which are already
+using the ``[project]`` table for metadata shouldn't be affected, and can simply
+change the ``flit_core <4`` constraint to ``<5``.
+
 - The ``[tool.flit.metadata]`` table is no longer used for project metadata
   (:ghpull:`771`). Use the newer :ref:`[project] table <pyproject_toml_project>`
   instead (or if that is not possible, build with ``flit_core <4``).
