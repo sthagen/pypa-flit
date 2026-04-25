@@ -294,6 +294,14 @@ These paths:
 .. versionchanged:: 3.8
    Include and exclude patterns can now use recursive glob patterns (``**``).
 
+.. note::
+
+   Flit includes a tool to generate these rules for you from a git repository.
+   Generate any files that should be excluded, such as built documentation or
+   test coverage data, and then run ``python -m flit.sdist_rules`` in the folder
+   containing ``pyproject.toml``. Copy the rules into your project config and
+   adjust them as necessary.
+
 Exclusions have priority over inclusions. Bytecode is excluded by default and cannot
 be included.
 
