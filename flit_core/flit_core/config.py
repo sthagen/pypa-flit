@@ -65,7 +65,7 @@ allowed_dynamic_fields = {
 
 
 default_license_files_globs = ['COPYING*', 'LICEN[CS]E*', 'NOTICE*', 'AUTHORS*']
-license_files_allowed_chars = re.compile(r'^[\w\-\.\/\*\?\[\]]+$')
+license_files_allowed_chars = re.compile(r'^[\w\-\.\/\*\?\[\] ]+$')
 
 
 def read_flit_config(path):
