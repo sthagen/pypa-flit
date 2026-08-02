@@ -1,6 +1,12 @@
 Release history
 ===============
 
+Version 4.0.1
+-------------
+
+No changes, but a new tag to trigger an upload to PyPI now that twine will
+accept it.
+
 Version 4.0
 -----------
 
