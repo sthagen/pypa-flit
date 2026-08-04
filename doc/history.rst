@@ -1,6 +1,11 @@
 Release history
 ===============
 
+Version 4.0.2
+-------------
+
+- Fix invalid metadata files with ``Import-Name`` (:ghissue:`813`).
+
 Version 4.0.1
 -------------
 
