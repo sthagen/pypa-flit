@@ -8,7 +8,7 @@ authors = [
     {name = "Thomas Kluyver", email = "thomas@kluyver.me.uk"},
 ]
 dependencies = [
-    "flit_core >=4.0.1",
+    "flit_core >=4.0.2",
     "requests",
     "docutils",
     "tomli-w",
