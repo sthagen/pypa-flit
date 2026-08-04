@@ -1,4 +1,5 @@
 """Tests of flit_core building itself"""
+import email.parser
 import os
 import os.path as osp
 import pytest
@@ -33,6 +34,12 @@ def test_prepare_metadata(tmp_path, cwd_project):
 
     assert_isfile(osp.join(dist_info, 'WHEEL'))
     assert_isfile(osp.join(dist_info, 'METADATA'))
+
+    # Check METADATA valid in a real package (test_common has minimal examples)
+    with open(osp.join(dist_info, 'METADATA'), 'rb') as f:
+        metadata_b = f.read()
+
+    assert email.parser.BytesParser().parsebytes(metadata_b).defects == []
 
 
 def test_wheel(tmp_path, cwd_project):
