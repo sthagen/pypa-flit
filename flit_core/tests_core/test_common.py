@@ -150,6 +150,8 @@ def test_metadata_multiline(tmp_path):
         # Example from: https://packaging.python.org/specifications/core-metadata/#author
         'author': ('C. Schultz, Universal Features Syndicate\n'
                    'Los Angeles, CA <cschultz@peanuts.example.com>'),
+        'import_name': 'foo',
+        'description': "Description text\ncan be spread over\n\nmultiple lines",
     }
     md = Metadata(d)
     sio = StringIO()
